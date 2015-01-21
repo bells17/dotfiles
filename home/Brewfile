@@ -1,0 +1,107 @@
+# http://nanapi.co.jp/blog/2014/03/05/homebrew-cask/
+# http://nwpct1.hatenablog.com/entry/2014/03/21/001609
+# http://mizchi.hatenablog.com/entry/2014/03/02/090517
+# http://blog.livedoor.jp/xaicron/archives/54458405.html
+
+# update
+update
+upgrade
+
+
+# tap
+brew tap sanemat/font 
+
+
+# cask
+brew install caskroom/cask/brew-cask
+
+
+# reupdate
+update
+upgrade
+
+
+# install
+install rbenv ruby-build zsh git sl ctags mysql tmux openssl cmake fish wget curl libtool automake tig ag z mongodb readline hub gist llvm go erlang scala sbt haskell-platform nginx elasticsearch memcached redis sqlite dnsmasq python pyenv pip nmap htop-osx reattach-to-user-namespace colordiff pstree ngrep httping
+
+install vim
+install imagemagick
+install wget
+install heroku-toolbelt
+install rmtrash
+install tree
+
+brew install --powerline --vim-powerline ricty
+
+brew install --default-names gnu-tar
+
+# cask install
+cask install java
+cask install intellij-idea-community
+cask install sublime-text 
+cask install iterm2
+cask install google-chrome
+cask install virtualbox
+cask install vagrant
+cask install kobito
+cask install caffeine
+cask install alfred
+cask install dropbox
+cask install evernote
+cask install pckeyboardhack
+cask install keyremap4macbook
+cask install skitch
+cask install sequel-pro
+cask install sourcetree
+cask install 1password
+cask install dash
+cask install firefox
+cask install slack
+cask install skype
+cask install sqwiggle
+cask install atom
+cask install atom-shell
+cask install arduino
+cask install clipmenu
+cask install google-drive
+cask install google-hangouts
+cask install google-japanese-ime
+cask install cyberduck
+cask install android-studio
+cask install adobe-reader
+cask install appcleaner
+cask install hyperswitch
+cask install clipmenu
+cask install flux
+cask install clamxav
+cask install charles
+cask install the-unarchiver
+cask install opera
+cask install libreoffice
+cask install robomongo
+cask install kindle
+cask install vlc
+cask install unity3d
+cast install teamviewer
+
+
+#alfredにsymlinkのアプリを認識させる
+cask alfred link
+
+
+#手動インストール
+#line
+#airmail
+#moon
+#kiritori
+#freememory
+#simplenote
+#onix
+#canary
+#3hub
+#Firefox Developer Edition
+
+
+# 不要なファイルを削除
+cleanup
+
