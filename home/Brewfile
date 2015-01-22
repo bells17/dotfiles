@@ -60,6 +60,9 @@ install ansible
 
 install --default-names gnu-tar
 
+brew install ghc cabal-install
+
+
 # cask install
 cask install java
 cask install xquartz
