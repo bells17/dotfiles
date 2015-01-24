@@ -110,6 +110,7 @@ unsetopt promptcr
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # golang

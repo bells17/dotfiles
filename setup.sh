@@ -1,11 +1,12 @@
 #! /bin/bash
 
 dir=`dirname $0`
+cd $dir
 
 # command line tools
 xcode-select --install
 
-# rbenv
+# homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # zsh
@@ -21,8 +22,8 @@ cp -f /usr/local/Cellar/ricty/3.2.4/share/fonts/*.ttf ~/Library/Fonts/
 fc-cache -vf
 
 #setting files
-cp "${dir}/.*" ~/
-cp "${dir}/*" ~/
+cp "${dir}/home/.*" ~/
+cp "${dir}/home/*" ~/
 
 # reload .zshrc
 source ~/.zshrc
@@ -35,6 +36,9 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 find ~/* -name ".DS_Store" -print -exec rm {} ";"
 
 killall Finder
+
+# http://www.lifehacker.jp/2012/01/120112copytextfromquicklook.html
+defaults write com.apple.finder QLEnableTextSelection -bool TRUE; killall Finder
 
 # make dir
 mkdir ~/bin
@@ -68,3 +72,14 @@ git config --global color.diff auto
 git config --global color.status auto
 git config --global color.branch auto
 git config --global alias.gr "log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'"
+
+# rbenv
+rbenv install 2.1.5
+rbenv rehash
+rbenv global 2.1.5
+rbenv exec gem install bundler
+rbenv rehash
+
+# install gem tools
+bundle install
+

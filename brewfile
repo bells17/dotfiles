@@ -102,6 +102,7 @@ install ngrep
 install httping
 install dnsmasq
 install colordiff
+install jq
 
 install imagemagick
 
