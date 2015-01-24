@@ -23,6 +23,10 @@
 # cp -f /usr/local/Cellar/ricty/3.2.4/share/fonts/*.ttf ~/Library/Fonts/ 
 # fc-cache -vf
 #
+# source ~/.zshrc
+#
+# sh ~/dotfiles/home/setup.sh
+#
 # http://nanapi.co.jp/blog/2014/03/05/homebrew-cask/
 # http://nwpct1.hatenablog.com/entry/2014/03/21/001609
 # http://mizchi.hatenablog.com/entry/2014/03/02/090517
@@ -48,23 +52,74 @@ upgrade
 
 
 # install
-install rbenv ruby-build zsh git sl ctags mysql tmux openssl cmake fish wget curl libtool automake tig ag z mongodb readline hub gist llvm go erlang scala sbt nginx memcached redis sqlite dnsmasq python nmap htop-osx reattach-to-user-namespace colordiff pstree ngrep httping
+install rbenv
+install ruby-build
+install rbenv-gemset
+install readline
+
+install python
+install go
+install erlang
+install scala
+install sbt
+install llvm
+install nvm
+install ghc cabal-install
+install cmake
+
+install nginx
+install memcached
+install redis
+install sqlite
+install mongodb
+install mysql
 
 install vim
-install imagemagick
-install wget
+install emacs
+
+install git
+install hub
+install gist
 install heroku-toolbelt
-install rmtrash
-install tree
+install tig
+
 install ansible
+install phantomjs
+install casperjs
+
+install tmux
+install fish
+
+install ctags
+
+install tree
+install wget
+install curl
+install ag
+install nmap
+install pstree
+install ngrep
+install httping
+install dnsmasq
+install colordiff
+
+install imagemagick
 
 install --default-names gnu-tar
 
-brew install ghc cabal-install
+install sl
+install openssl
+install libtool
+install automake
+install z
+install htop-osx
+install reattach-to-user-namespace
+install rmtrash
+
 
 
 # cask install
-cask install java
+#cask install java #1.6を入れるためGUIからに
 cask install xquartz
 cask install sublime-text 
 cask install iterm2
@@ -130,6 +185,8 @@ cask install alfred
 #Firefox Developer Edition
 #keyremap4
 #sublime text3
+#atom
+#easywine
 
 # 不要なファイルを削除
 cleanup
