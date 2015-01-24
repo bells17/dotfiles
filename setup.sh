@@ -58,3 +58,13 @@ go get github.com/motemen/ghq
 # tmux-powerline
 git clone https://github.com/erikw/tmux-powerline.git ~/
 
+# git
+git config --global push.default matching
+git config --global alias.ci commit
+git config --global alias.pl pull
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global color.diff auto
+git config --global color.status auto
+git config --global color.branch auto
+git config --global alias.gr "log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'"
